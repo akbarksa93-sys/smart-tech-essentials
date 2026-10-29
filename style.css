@@ -1,0 +1,61 @@
+/* Container Grid */
+.product-grid, .grid, main, .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Equal Sized Product Cards */
+.product-card {
+  background: #ffffff;
+  border: 2px solid #8a2be2;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Fixed Image Box (Fixes Overflow & Scaling) */
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+/* Purple Badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #8a2be2;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .product-grid, .grid, main, .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .product-grid, .grid, main, .container {
+    grid-template-columns: 1fr;
+  }
+}
