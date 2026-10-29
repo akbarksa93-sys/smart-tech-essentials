@@ -1,301 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Tech & Life Essentials Showcase</title>
-  <style>
-    /* Global Styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f7f9;
-      color: #333;
-      padding: 20px;
-    }
-    
-    /* Header & Navigation */
-    header {
-      text-align: center;
-      padding: 30px 10px;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
-      color: #ffffff;
-      border-radius: 12px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      font-size: 2.2rem;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
-    }
-    header p {
-      font-size: 1rem;
-      color: #94a3b8;
-    }
-
-    /* Grid Layout for Product Cards */
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    /* Card Styling */
-    .card {
-      background: #ffffff;
-      border-radius: 10px;
-      border: 1px solid #e2e8f0;
-      padding: 15px;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
-
-    /* Number Badge */
-    .badge {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      background-color: #2563eb;
-      color: #ffffff;
-      font-size: 0.8rem;
-      font-weight: bold;
-      padding: 4px 10px;
-      border-radius: 20px;
-      z-index: 2;
-    }
-
-    /* Product Image */
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: contain;
-      border-radius: 6px;
-      margin-bottom: 12px;
-      background-color: #fafafa;
-    }
-
-    /* Product Details */
-    .card h3 {
-      font-size: 0.95rem;
-      line-height: 1.4;
-      color: #1e293b;
-      margin-bottom: 8px;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      height: 2.8em;
-    }
-    .card .price {
-      font-size: 1.1rem;
-      font-weight: bold;
-      color: #059669;
-      margin-bottom: 12px;
-    }
-
-    /* Direct Referral Button */
-    .buy-btn {
-      display: block;
-      text-align: center;
-      background-color: #2563eb;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 10px 0;
-      border-radius: 6px;
-      transition: background-color 0.2s ease;
-    }
-    .buy-btn:hover {
-      background-color: #1d4ed8;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tech & Life Essentials Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Smart Tech & Life Essentials</h1>
+        <p>Curated smart gadgets, watches, and daily lifestyle essentials.</p>
+    </header>
 
-  <header>
-    <h1>Smart Tech & Life Essentials</h1>
-    <p>Curated Collection of Next-Gen Gadgets, Smart Devices & Daily Essentials</p>
-  </header>
+    <main class="container">
+        <!-- Card S-1 -->
+        <div class="product-card">
+            <div class="badge">S-1</div>
+            <img src="https://m.media-amazon.com/images/I/71+281R5wL._AC_SL1500_.jpg" alt="Garmin Tactix 8 51mm Cerakote">
+            <h3>Garmin Tactix 8 - 51mm Cerakote Tactical GPS</h3>
+            <p class="price">Check Price</p>
+            <a href="https://link.amazon/B0EqEMCin" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
+        </div>
 
-  <main class="product-grid">
-    <main class="product-grid">
+        <!-- Card S-2 -->
+        <div class="product-card">
+            <div class="badge">S-2</div>
+            <img src="https://m.media-amazon.com/images/I/61sC8xwKK4L._AC_SL1500_.jpg" alt="Korean Brand Wapik Women's Smartwatch">
+            <h3>Wapik Women's Bluetooth Smartwatch</h3>
+            <p class="price">Check Price</p>
+            <a href="https://link.amazon/B08clPdOW" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
+        </div>
 
-    <!-- Card S-1 -->
-    <div class="card">
-      <span class="badge">S-1</span>
-      <img src="https://m.media-amazon.com/images/I/81VOB-cEO9L._AC_SY450_.jpg" alt="Samsung Galaxy Watch Ultra2 Titanium Gray">
-      <h3>Samsung Galaxy Watch Ultra2 Titanium Gray</h3>
-      <p class="price">SAR 2,485.00</p>
-      <a href="https://link.amazon/A0izv4cfy" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
-    </div>
+        <!-- Card S-3 -->
+        <div class="product-card">
+            <div class="badge">S-3</div>
+            <img src="https://m.media-amazon.com/images/I/713dzrczuLL._AC_SL1500_.jpg" alt="Huawei WATCH GT 7 46mm Smart Watch">
+            <h3>Huawei WATCH GT 7 46mm Smart Watch, King of Battery</h3>
+            <p class="price">SAR 896.00</p>
+            <a href="https://link.amazon/B0j39K8ry" class="buy-btn" target="_blank" rel="noopener noreferrer">View Product</a>
+        </div>
+    </main>
 
-    <!-- Card S-2 -->
-    <div class="card">
-      <span class="badge">S-2</span>
-      <img src="https://m.media-amazon.com/images/I/817lir-1JAL._AC_SY450_.jpg" alt="Samsung Galaxy Watch Ultra2 Titanium Silver">
-      <h3>Samsung Galaxy Watch Ultra2 Titanium Silver</h3>
-      <p class="price">SAR 2,419.77</p>
-      <a href="https://link.amazon/A0dw8LgVa" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
-    </div>
-
-    <!-- Card S-3 -->
-    <div class="card">
-      <span class="badge">S-3</span>
-      <img src="https://m.media-amazon.com/images/I/71WArUB2RLL._AC_SY450_.jpg" alt="Samsung Galaxy Watch9 Cream">
-      <h3>Samsung Galaxy Watch9 Cream</h3>
-      <p class="price">SAR 1,448.77</p>
-      <a href="https://link.amazon/B07ARonx9" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
-    </div>
-
-      <!-- Card S-4 -->
-    <div class="card">
-      <span class="badge">S-4</span>
-      <img src="https://m.media-amazon.com/images/I/71MqpE6rlOL._AC_SL1500_.jpg" alt="Samsung Galaxy Watch9 Graphite">
-      <h3>Samsung Galaxy Watch9 Graphite (40mm)</h3>
-      <p class="price">SAR 1,448.77</p>
-      <a href="https://link.amazon/B0cEKOc9R" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
-    </div>
-
-    <!-- Card S-5 -->
-    <div class="card">
-      <span class="badge">S-5</span>
-      <img src="https://m.media-amazon.com/images/I/611jnYHa1OL._AC_SY450_.jpg" alt="Garmin Smartwatch Vivoactive 6">
-      <h3>Garmin Smartwatch Vivoactive 6 Black</h3>
-      <p class="price">SAR 1,367.00</p>
-      <a href="https://link.amazon/B08u4yeFw" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
-    </div>
-
-    <!-- Card S-6 -->
-    <div class="card">
-      <span class="badge">S-6</span>
-      <img src="https://m.media-amazon.com/images/I/61+X8ju+dAL._AC_SL1500_.jpg" alt="Garmin Instinct 3 Tactical Edition">
-      <h3>Garmin Instinct 3 Tactical Edition Solar (45mm)</h3>
-      <p class="price">Check Price</p>
-      <a href="https://link.amazon/B026YAppD" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
-    </div>
-
-    <!-- Card S-7 -->
-    <div class="card">
-      <span class="badge">S-7</span>
-      <img src="https://m.media-amazon.com/images/I/61A4yOWzGBL._AC_SY300_SX300_QL70_ML2_.jpg" alt="Garmin Vivoactive 5 Health & Fitness GPS">
-      <h3>Garmin Vivoactive 5 Health & Fitness GPS Smartwatch</h3>
-      <p class="price">Check Price</p>
-      <a href="https://link.amazon/B075taf8L" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
-    </div>
-
-      <!-- Card S-8 -->
-    <div class="card">
-      <span class="badge">S-8</span>
-      <img src="https://m.media-amazon.com/images/I/81mNmf1MmUL._AC_SL1500_.jpg" alt="KOSPET Tank Smart Watch GPS">
-      <h3>KOSPET Tank Smart Watch for Men/Women GPS</h3>
-      <p class="price">Check Price</p>
-      <a href="https://link.amazon/B0bn1Vf2v" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
-    </div>
-
-    <!-- Card S-9 -->
-    <div class="card">
-      <span class="badge">S-9</span>
-      <img src="https://m.media-amazon.com/images/I/71-+28lR5wL._AC_SL1500_.jpg" alt="Garmin Tactix 8 51mm Cerakote">
-      <h3>Garmin Tactix 8 – 51mm Cerakote Tactical GPS</h3>
-      <p class="price">Check Price</p>
-      <a href="https://link.amazon/B0eqEMcIn" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
-    </div>
-
-    <!-- Card S-10 -->
-    <div class="card">
-      <span class="badge">S-10</span>
-      <img src="https://m.media-amazon.com/images/I/61sC8xwKK4L._AC_SL1500_.jpg" alt="Korean Brand Wapik Women's Smartwatch">
-      <h3>Wapik Women's Bluetooth Smartwatch</h3>
-      <p class="price">Check Price</p>
-      <a href="https://link.amazon/B08cLpDOw" class="buy-btn" target="_blank" rel="noopener noreferrer">Shop Now</a>
-    </div>
-
-      <!-- Item 724 -->
-<div class="product-card">
-  <div class="badge">724</div>
-  <img src="https://m.media-amazon.com/images/I/713dzrczuLL._AC_SL1500_.jpg" alt="Huawei WATCH GT 7 46mm Smart Watch">
-  <h3>Huawei WATCH GT 7 46mm Smart Watch, King of Battery</h3>
-  <p class="price">SAR 896.00</p>
-  <a href="https://link.amazon/B0j39K8ry" target="_blank" class="buy-btn">View Product</a>
-</div>
-
-<!-- Item 725 -->
-<div class="product-card">
-  <div class="badge">725</div>
-  <img src="https://m.media-amazon.com/images/I/71h-SgYtLbL._AC_SL1500_.jpg" alt="Huawei WATCH GT 7 46mm Smart Watch">
-  <h3>Huawei WATCH GT 7 46mm Smart Watch, King of Battery</h3>
-  <p class="price">SAR 999.00</p>
-  <a href="https://link.amazon/B0gry1z6P" target="_blank" class="buy-btn">View Product</a>
-</div>
-
-<!-- Item 726 -->
-<div class="product-card">
-  <div class="badge">726</div>
-  <img src="https://m.media-amazon.com/images/I/71fbPDxzc1L._AC_SL1500_.jpg" alt="Huawei WATCH GT 7 Pro 46mm Smart Watch">
-  <h3>Huawei WATCH GT 7 Pro 46mm Smart Watch, King of Battery</h3>
-  <p class="price">SAR 1,325.00</p>
-  <a href="https://link.amazon/B0bmCAT7e" target="_blank" class="buy-btn">View Product</a>
-</div>
-
-<!-- Item 727 -->
-<div class="product-card">
-  <div class="badge">727</div>
-  <img src="https://m.media-amazon.com/images/I/81KTMYEuC1L._AC_SL1500_.jpg" alt="Huawei WATCH GT 7 Pro 46mm Smart Watch">
-  <h3>Huawei WATCH GT 7 Pro 46mm Smart Watch, King of Battery Life</h3>
-  <p class="price">SAR 1,370.97</p>
-  <a href="https://link.amazon/B0cKvZbhE" target="_blank" class="buy-btn">View Product</a>
-</div>
-
-<!-- Item 728 -->
-<div class="product-card">
-  <div class="badge">728</div>
-  <img src="https://m.media-amazon.com/images/I/712l7M7LmOL._AC_SL1500_.jpg" alt="Garmin Forerunner 965 Running Smartwatch">
-  <h3>Garmin Forerunner 965 Running Smartwatch, Colorful AMOLED Display</h3>
-  <p class="price">SAR 2,345.00</p>
-  <a href="https://link.amazon/B0a3VXzgx" target="_blank" class="buy-btn">View Product</a>
-</div>
-
-<!-- Item 729 -->
-<div class="product-card">
-  <div class="badge">729</div>
-  <img src="https://m.media-amazon.com/images/I/614f8YlEciL._AC_SL1500_.jpg" alt="VITURE Pro 2 XR/AR Glasses">
-  <h3>VITURE Pro 2 XR/AR Glasses, UltraClarity 3.0</h3>
-  <p class="price">SAR 1,425.00</p>
-  <a href="https://link.amazon/B03dMQJvf" target="_blank" class="buy-btn">View Product</a>
-</div>
-
-<!-- Item 730 -->
-<div class="product-card">
-  <div class="badge">730</div>
-  <img src="https://m.media-amazon.com/images/I/61-YEQLA6IL._AC_SL1500_.jpg" alt="VITURE Beast AR Glasses">
-  <h3>VITURE Beast AR Glasses, 174" 1200p, 58 FOV, 3DoF for iPhone/Android</h3>
-  <p class="price">SAR 2,299.00</p>
-  <a href="https://link.amazon/B01aTBBhT" target="_blank" class="buy-btn">View Product</a>
-</div>
-
-<!-- Item 731 -->
-<div class="product-card">
-  <div class="badge">731</div>
-  <img src="https://m.media-amazon.com/images/I/71KNsG+DHwL._AC_SL1500_.jpg" alt="CJkao Smart Glasses G2-Black">
-  <h3>CJkao Smart Glasses, G2-Black</h3>
-  <p class="price">SAR 400.00</p>
-  <a href="https://link.amazon/B02R5mbsY" target="_blank" class="buy-btn">View Product</a>
-</div>
-  </main>
-
+    <footer>
+        <p>&copy; 2026 Smart Tech & Life Essentials. All rights reserved.</p>
+    </footer>
 </body>
 </html>
