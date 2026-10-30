@@ -60,3 +60,27 @@
     grid-template-columns: 1fr;
   }
 }
+/* Price Color and Styling */
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e74c3c; /* Vibrant red/orange so it grabs attention */
+    margin: 10px 0;
+}
+
+/* Shop Now Button Color and Styling */
+.buy-btn {
+    display: inline-block;
+    background-color: #8a2be2; /* Matches your purple theme */
+    color: #ffffff;            /* Pure white text */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #732d91; /* Slightly darker purple on hover */
+}
