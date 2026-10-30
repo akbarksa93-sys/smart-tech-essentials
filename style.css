@@ -84,3 +84,35 @@
 .buy-btn:hover {
     background-color: #732d91; /* Slightly darker purple on hover */
 }
+/* Premium Header Styling */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #eef2f7 100%);
+  border-bottom: 2px solid #8a2be2;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header p {
+  color: #666666;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* Card Hover Elevation */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.15);
+}
