@@ -1,4 +1,13 @@
-
+header {
+  text-align: center;
+  padding: 45px 20px;
+  background: linear-gradient(135deg, #f3e8ff 0%, #f8f5fc 100%);
+  border-bottom: 2px solid #8a2be2;
+  border-radius: 12px;
+  margin: 20px auto 35px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.08);
+}
 /* Container Grid */
 .product-grid, .grid, main, .container {
   display: grid;
