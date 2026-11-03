@@ -1,23 +1,41 @@
+/* Header Styling */
 header {
   text-align: center;
-  padding: 45px 20px;
-  background: linear-gradient(135deg, #f3e8ff 0%, #f8f5fc 100%);
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #eef2f7 100%);
   border-bottom: 2px solid #8a2be2;
   border-radius: 12px;
   margin: 20px auto 35px auto;
   max-width: 1200px;
   box-shadow: 0 4px 15px rgba(138, 43, 226, 0.08);
 }
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header p {
+  color: #666666;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
 /* Container Grid */
 .product-grid, .grid, main, .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-/* Equal Sized Product Cards */
-.product-card {
+/* Equal Sized Product Cards (Support both .card and .product-card) */
+.card, .product-card {
   background: #ffffff;
   border: 2px solid #8a2be2;
   border-radius: 12px;
@@ -28,10 +46,16 @@ header {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.15);
 }
 
 /* Fixed Image Box (Fixes Overflow & Scaling) */
-.product-card img {
+.card img, .product-card img {
   width: 100%;
   height: 220px;
   object-fit: contain;
@@ -57,6 +81,32 @@ header {
   font-weight: bold;
 }
 
+/* Price Color and Styling */
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 10px 0;
+}
+
+/* Shop Now Button Color and Styling */
+.shop-btn, .buy-btn {
+  display: inline-block;
+  background-color: #ff9900 !important; /* Forces solid orange button */
+  color: #ffffff !important;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-btn:hover, .buy-btn:hover {
+  background-color: #e88b00 !important;
+}
+
 /* Mobile Responsive */
 @media (max-width: 900px) {
   .product-grid, .grid, main, .container {
@@ -68,60 +118,4 @@ header {
   .product-grid, .grid, main, .container {
     grid-template-columns: 1fr;
   }
-}
-/* Price Color and Styling */
-.price {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #e74c3c; /* Vibrant red/orange so it grabs attention */
-    margin: 10px 0;
-}
-
-/* Shop Now Button Color and Styling */
-.buy-btn {
-    display: inline-block;
-    background-color: #8a2be2; /* Matches your purple theme */
-    color: #ffffff;            /* Pure white text */
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 0.95rem;
-    transition: background-color 0.3s ease;
-}
-
-.buy-btn:hover {
-    background-color: #732d91; /* Slightly darker purple on hover */
-}
-/* Premium Header Styling */
-header {
-  text-align: center;
-  padding: 40px 20px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #eef2f7 100%);
-  border-bottom: 2px solid #8a2be2;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: #2c3e50;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-header p {
-  color: #666666;
-  font-size: 1.1rem;
-  font-weight: 300;
-}
-
-/* Card Hover Elevation */
-.product-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.15);
 }
